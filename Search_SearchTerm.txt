@@ -1,0 +1,2 @@
+  REPLACE(dbo.Product.Title + dbo.ViewBrandCollectionPatternRelation.BrandTitle + dbo.ViewProductStyles.ProductStyleTitle + dbo.ViewProductColors.ProductColorTitle + dbo.ViewProductMaterials.ProductMaterialTitle + ISNULL(dbo.ViewBrandCollectionPatternRelation.CollectionTitle
+                 + '. ', ' ') + ISNULL(dbo.Category.Title + '. ', ' ') + ISNULL(dbo.ViewBrandCollectionPatternRelation.PatternTitle + '. ', ''), ' ', '') AS SearchTerm
